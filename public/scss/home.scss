@@ -69,7 +69,7 @@
     padding: 23px 0;
     margin-bottom: 20px;
     background-color: #fff;
-    &:nth-child(even) {
+    &:nth-child(odd) {
       .cat_img {
         order: 1;
       }
@@ -78,16 +78,16 @@
       content: "";
       position: absolute;
       left: 50%;
-      top: -43px;
-      width: 65%;
-      height: 16px;
+      top: -33px;
+      width: 60%;
+      height: 5px;
       background: #fff;
       border-radius: 290px / 8px;
       -moz-border-radius: 290px / 8px;
       -webkit-border-radius: 290px / 8px;
-      box-shadow: 0 10px 17px rgba(0, 0, 0, 0.9);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
       -moz-box-shadow: 0 10px 17px rgba(0, 0, 0, 0.9);
-      -webkit-box-shadow: 0 10px 17px rgba(0, 0, 0, 0.9);
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
       z-index: -3;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);

@@ -94,17 +94,19 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  span {
-    font-size: 12px;
-    position: absolute;
-    color: #010101;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 0;
-    cursor: default;
-    pointer-events: none;
+  a{
+    &>span {
+      font-size: 12px;
+      position: absolute;
+      color: #010101;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      cursor: default;
+      pointer-events: none;
+    }
   }
 }
 
@@ -201,21 +203,28 @@
           align-self: baseline;
           display: block;
           width: 100%;
-          span {
-            position: relative;
-            color: #fff;
-            cursor: pointer;
-            pointer-events: inherit;
-            -webkit-transform: none;
-            -ms-transform: none;
-            transform: none;
-            top: 0;
-            &:before {
-              content: "@";
-              padding-right: 5px;
+          a{
+            span {
+           
+              color: #fff;
+              cursor: pointer;
+              pointer-events: inherit;
+              -webkit-transform: none;
+              -ms-transform: none;
+              transform: none;
+              top: 0;
+             }
+            &>span{
+              position: relative;
+              span{
+                display: none;
+              }
+              &:before {
+                content: "@";
+              }
             }
+  
           }
-
           .buy {
             display: block;
             text-align: center;

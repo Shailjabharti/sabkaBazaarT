@@ -19,15 +19,15 @@
                         {{#each prod_List}}
                         <li id="{{this.category}}">
                             <div>
-                                <h4 class="match">{{this.name}}</h4>
+                                <h4 class="match" tabindex="0">{{this.name}}</h4>
                                 <div class="prod_description">
                                     <div class="prod_img"><img alt="fruits" src="{{this.imageURL}}"></div>
-                                    <p>
+                                    <p tabindex="0">
                                        {{this.description}}
                                     </p>
                                     
                                 <div class="buy_now">
-                                    <a href="#" class="btn buy" >Buy Now <span>MRP Rs. {{this.price}}</span></a>
+                                    <a href="#" class="btn buy" role="button">Buy Now <span><span>MRP</span> Rs. {{this.price}}</span></a>
                                 </div>
                                 </div>
                             </div>
